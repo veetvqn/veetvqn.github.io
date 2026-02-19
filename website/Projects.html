@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+        <!-- Welcome section -->
+        <section>
+            <h3>Welcome</h3>
+            <p>Hello, and welcome to my portfolio website. Here you can find all sorts of projects I have completed during my college career!</p>
+        </section>
+
+        <!-- Purpose and goals -->
+        <section>
+            <h3>Purpose and Goals</h3>
+            <p>I am creating this website to showcase a few of the projects I have worked on during my time at Mizzou. The goal of this website is to showcase the skills that I have acquired while studying in Mizzou's Computer Science courses. I had a lot of fun creating these projects, so I hope you will find them interesting.</p>
+            
+            <p>One of the end goals for me is to have this website serve as a kind of hub where I can store information on all of my projects so I can share it with recruiters as a way of getting their attention and displaying my unique skills. As a bonus, it would be cool to have this place where I can look back on my projects myself and maybe share them with others as well.</p>
+        </section>
+
+        <!-- Quote  -->
+        <section>
+            <h3>My Motto</h3>
+            <blockquote>
+                "Sometimes to take a step forward, you must first take two steps back."
+            </blockquote>
+        </section>
+
+        <!-- Featured projects -->
+        <section>
+            <h3>Featured Projects</h3>
+            
+            <!-- Project 1: Terraplot -->
+            <article>
+                <h3>Terraplot</h3>
+                <ul>
+                    <li>
+                        Terraplot is a full-stack web application that allows users to designate plots of 
+                        farmland for certain crops and vehicles being used on those plots
+                    </li>
+                    <li>
+                        Plots are integrated using field boundary drawing tools with Google Maps 
+                        integration, automated area calculations, and real-time satellite visualization.
+                    </li>
+                    <li>
+                        Includes an equipment management system with fuel tracking and detailed 
+                        logging. 
+                    </li>
+                    <li>
+                        Also includes a feature that accesses real-time USDA crop yield data to project 
+                        revenue using current market prices and compare different crop scenarios for 
+                        optimal planning
+                    </li>
+                    <li>
+                        Login information and farm data are secured with encrypted User authentication 
+                        and authorization, individual farm data isolation, data storage, and encryption 
+                        using Firebase, and real-time data updates
+                    </li>
+                    <li>
+                        Tech Stack: React.js, Google Maps API, Firebase (Auth/Firestore), Tailwind CSS
+                    </li>
+                    <li>
+                        Data Sources: USDA Crop Database, ISRIC API
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Project 2: Tiger Trades -->
+            <article>
+                <h3>TIGER TRADES</h3>
+                <ul>
+                    <li>
+                        Used a combination of MySQL for database management and AWS for hosting 
+                        the website.
+                    </li>
+                    <li>
+                        Used HTML, CSS, Java, and SQL for webpage format, backend functionality, and 
+                        database management. 
+                    </li>
+                    <li>
+                        Tiger Trades is a full-stack website that allows students to put items up for auction 
+                        and also bid for items that other students have decided to put up for auction.
+                    </li>
+                    <li>Tiger Trades has many features, such as encrypted sign-up/log-in functionality, a 
+                        wallet you can add funds to for bidding, a seller dashboard for items you have put 
+                        up for auction, and a page for buyers to see what items they have bid on.</li>
+                </ul>
+            </article>
+
+            <!-- Project 3: AI Loan Predictor -->
+            <article>
+                <h3>AI Loan Predictor</h3>
+                <ul>
+                    <li>
+                        An ensemble ML model that predicts if someone will be approved for a loan or not
+                    </li>
+                    <li>
+                        Dataset: 45,000 synthetic loan applications from Kaggle (77.5% rejected, 22.5% approved)
+                    </li>
+                    <li>
+                        Combines five classifiers (Logistic Regression, Random Forest, XGBoost, 
+                        LightGBM, Gradient Boosting) using soft voting ensemble
+                    </li>
+                    <li>
+                        Key techniques: SMOTE-Tomek resampling for class imbalance, extensive 
+                        feature engineering (risk indicators, interaction terms), and threshold optimization 
+                        (0.6312 vs default 0.5)
+                    </li>
+                    <li>
+                        Results: 92.4% accuracy, 90.1% precision, 89.5% recall, AUC of 0.9713
+                    </li>
+                    <li>
+                        Explainability: Identifies positive factors (high credit score, low debt-to-income) 
+                        and negative factors (previous defaults, short credit history) for each decision
+                    </li>
+                    <li>
+                        Application: Streamlit web app supporting individual and batch predictions with 
+                        visual explanations
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Viet Nguyen | 02/15/2026</p>
+    </footer>
+</body>
+
+</html>
