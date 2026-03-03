@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1e36;
+  color: white;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url("herobg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 0 80px;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-tag {
+  color: #f9ab00;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.accent {
+  color: #4287f5;
+}
+
+.hero-text {
+  color: #9a99b5;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #4287f5;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background: #5a9af8;
+}
+
+.btn-outline {
+  border: 2px solid #4287f5;
+  color: #4287f5;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-radius: 6px;
+}
+
+.btn-outline:hover {
+  background: rgba(66,135,245,0.1);
+}
+
+.hero-video {
+  width: 420px;
+}
+
+.video-box {
+  background: #2b2a4a;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.play {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #4287f5;
+}
+
+.video-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #9a99b5;
+}
+
+.video-link {
+  font-size: 11px;
+  color: #4287f5;
+}
+
+.purpose {
+  max-width: 900px;
+  margin: 120px auto 80px;
+  padding: 0 80px;
+}
+
+.chip {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #4287f5;
+  background: rgba(66, 135, 245, 0.08);
+  border: 1px solid rgba(66, 135, 245, 0.3);
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+.purpose-text {
+  color: #9a99b5;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.quote-section {
+  padding: 60px 80px 120px;
+}
+
+.quote-box {
+  background: #2b2a4a;
+  border-left: 4px solid #f9ab00;
+  border-radius: 10px;
+  padding: 50px 60px;
+}
+
+.quote-mark {
+  font-size: 60px;
+  color: #f9ab00;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.6;
+}
