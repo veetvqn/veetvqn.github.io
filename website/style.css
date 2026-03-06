@@ -28,6 +28,23 @@ section p {
   line-height: 1.6;
 }
 
+/*About page*/
+.about-list {
+  list-style-type: square;
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+.about-list li {
+  font-size: 18px;
+  color: #9a99b5;
+  margin-bottom: 8px;
+}
+
+.about-list li:hover {
+  color: #4287f5;
+}
+
 /* Hero section */
 .hero {
   min-height: 100vh;
