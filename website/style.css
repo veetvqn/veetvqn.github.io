@@ -214,3 +214,237 @@ h1 {
 .resume-link:hover {
   background-color: #5a9af8;
 }
+
+/* Reflection page layout */
+.about-wrapper {
+    display: flex;
+    gap: 40px;
+    padding: 60px 80px 100px;
+    align-items: flex-start;
+}
+
+.about-left {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.about-chip {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #4287f5;
+    background: rgba(66, 135, 245, 0.08);
+    border: 1px solid rgba(66, 135, 245, 0.3);
+    padding: 8px 18px;
+    border-radius: 6px;
+}
+
+.about-heading {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 28px;
+}
+
+.about-heading .accent {
+    color: #f9ab00;
+}
+
+.intro-block {
+    background: #2b2a4a;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin-bottom: 48px;
+    border: 1px solid rgba(66, 135, 245, 0.15);
+}
+
+.intro-block p {
+    color: #9a99b5;
+    font-size: 17px;
+    line-height: 1.8;
+    padding: 0;
+}
+
+.intro-block p:first-of-type::first-letter {
+    font-size: 3em;
+    font-weight: 700;
+    color: #f9ab00;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.intro-block p:nth-of-type(2n) {
+    text-indent: 2em;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 60px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(66, 135, 245, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -60px;
+    top: 16px;
+    width: 38px;
+    height: 38px;
+    background: #2b2a4a;
+    border: 2px solid rgba(66, 135, 245, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.timeline-card {
+    background: #2b2a4a;
+    border: 1px solid rgba(66, 135, 245, 0.12);
+    border-radius: 10px;
+    padding: 26px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.timeline-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #f9ab00;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.timeline-card h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.timeline-card p {
+    color: #9a99b5;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.timeline-card p:nth-of-type(2n) {
+    text-indent: 2em;
+}
+
+.about-right {
+    width: 320px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-card {
+    background: #2b2a4a;
+    border: 1px solid rgba(66, 135, 245, 0.12);
+    border-radius: 10px;
+    padding: 26px 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-card h2 {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.sidebar-card p {
+    color: #9a99b5;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.tag-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(66, 135, 245, 0.4);
+    color: #9a99b5;
+    background: rgba(66, 135, 245, 0.07);
+    white-space: nowrap;
+}
+
+.sidebar-quote {
+    background: #2b2a4a;
+    border-left: 4px solid #f9ab00;
+    border-radius: 10px;
+    padding: 30px 28px;
+}
+
+.sidebar-quote .quote-mark {
+    font-size: 40px;
+    color: #f9ab00;
+    opacity: 0.6;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.sidebar-quote p {
+    font-size: 16px;
+    font-style: italic;
+    color: #d0cfe8;
+    line-height: 1.6;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 11px 22px;
+    background: #4287f5;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid #4287f5;
+    transition: background 0.25s ease;
+}
+
+.resume-btn:hover {
+    background: #5a9af8;
+}
+
+@media (max-width: 900px) {
+    .about-wrapper {
+        flex-direction: column;
+        padding: 40px 24px 80px;
+    }
+    .about-right {
+        width: 100%;
+    }
+    .about-heading {
+        font-size: 38px;
+    }
+}
