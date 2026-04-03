@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
+	<meta charset="UTF-8">
+	<title>Contact — Viet Nguyen</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+	<header>
+		<img src="logo.png" alt="Your Site Logo" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="projects.html">Projects</a></li>
+				<li><a href="reflection.html">Reflection</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="cth">
+		<div class="chip">Contact</div>
+		<h2 class="h2" style="margin-bottom:12px">Get In Touch</h2>
+
+		<div class="ctg">
+
+			<!-- Contact Form -->
+			<form>
+				<div class="fg">
+					<label class="fl" for="title">Title</label>
+					<select class="fi2" id="title" name="title" required>
+						<option value="" disabled selected>Select your title</option>
+						<option value="mr">Mr.</option>
+						<option value="ms">Ms.</option>
+						<option value="mrs">Mrs.</option>
+						<option value="dr">Dr.</option>
+						<option value="prof">Prof.</option>
+					</select>
+				</div>
+
+				<div class="fg">
+					<label class="fl" for="fullname">Full Name</label>
+					<input class="fi2" id="fullname" type="text" name="fullname" placeholder="Enter your full name" required>
+				</div>
+
+				<div class="fg">
+					<label class="fl" for="email">Email Address</label>
+					<input class="fi2" id="email" type="email" name="email" placeholder="Enter your email address" required>
+				</div>
+
+				<div class="fg">
+					<label class="fl" for="reason">Reason for Contact</label>
+					<select class="fi2" id="reason" name="reason" required>
+						<option value="" disabled selected>Select a reason</option>
+						<option value="job">Job Opportunity</option>
+						<option value="collab">Collaboration</option>
+						<option value="question">General Question</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+				<div class="fg">
+					<label class="fl" for="message">Message</label>
+					<textarea class="fi2 fta" id="message" name="message" placeholder="Enter your message here..." required></textarea>
+				</div>
+
+				<button class="bpr" type="submit">
+					Send Message &rarr;
+				</button>
+			</form>
+
+			<!-- Contact Information -->
+			<div>
+				<div class="cc">
+					<h3 class="h3" style="margin-bottom:4px">Contact Information</h3>
+
+					<div class="cit">
+						<div class="cion">#</div>
+						<div>
+							<div class="clb">Phone Number</div>
+							<div class="cvl">(816)-673-4471</div>
+						</div>
+					</div>
+
+					<div class="cit">
+						<div class="cion">@</div>
+						<div>
+							<div class="clb">Email</div>
+							<div class="cvl">vqn79p@umsystem.edu</div>
+						</div>
+					</div>
+
+					<div class="cit">
+						<div class="cion">GH</div>
+						<div>
+							<div class="clb">GitHub</div>
+							<div class="cvl">github.com/veet.vqn</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="lcc">
+					<div class="lpin">&#128205;</div>
+					<div class="lcy">Columbia, MO</div>
+					<div class="lst">University of Missouri</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<p style="text-align: center; padding: 24px; color: #9a99b5; font-size: 13px; border-top: 1px solid rgba(66,135,245,0.15);">
+			Viet Nguyen | 02/15/2026
+		</p>
+		<p style="text-align: center; padding-bottom: 8px; color: #9a99b5; font-size: 13px;">
+			<img src="media/phone.png" alt="Phone" width="16" height="16" style="vertical-align: middle; margin-right: 6px;">
+			(816)-673-4471
+		</p>
+		<p style="text-align: center; padding-bottom: 24px; color: #9a99b5; font-size: 13px;">
+			<img src="media/email.png" alt="Email" width="16" height="16" style="vertical-align: middle; margin-right: 6px;">
+			vqn79p@umsystem.edu
+		</p>
+	</footer>
+</body>
+</html>
