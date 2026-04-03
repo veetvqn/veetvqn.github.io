@@ -495,3 +495,101 @@ h1 {
         font-size: 38px;
     }
 }
+
+/* print query */
+@media print {
+
+  @page {
+    margin: 1in;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 12pt;
+  }
+
+  header,
+  nav,
+  .video-figure,
+  .intro-video,
+  video,
+  .resume-link,
+  .resume-btn,
+  .btn-primary,
+  .btn-outline,
+  section:has(.intro-video) h3 {
+    display: none !important;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 22pt;
+    color: black;
+    margin-bottom: 12pt;
+    border-bottom: 1pt solid black;
+    padding-bottom: 6pt;
+  }
+
+  h3 {
+    font-size: 13pt;
+    color: black;
+    margin-bottom: 6pt;
+  }
+
+  p {
+    color: black;
+    font-size: 11pt;
+    line-height: 1.5;
+    margin-bottom: 8pt;
+  }
+
+  section {
+    padding: 6pt 0;
+    margin-bottom: 10pt;
+  }
+
+  .intro-section {
+    display: block;
+  }
+
+  .profile-photo {
+    display: none;
+  }
+
+  .about-list {
+    list-style-type: square;
+    padding-left: 20pt;
+    margin-top: 4pt;
+  }
+
+  .about-list li {
+    font-size: 11pt;
+    color: black;
+    margin-bottom: 4pt;
+  }
+
+  footer {
+    display: block;
+    border-top: 1pt solid black;
+    margin-top: 16pt;
+    padding-top: 6pt;
+  }
+
+  footer p {
+    text-align: center;
+    color: black !important;
+    font-size: 9pt;
+    padding: 0;
+    border-top: none;
+  }
+
+  section {
+    page-break-inside: avoid;
+  }
+}
