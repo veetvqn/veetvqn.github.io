@@ -131,10 +131,6 @@ section p {
   }
  
   .profile-photo {
-    width: 200px;
-    height: 200px;
-    aspect-ratio: unset;
-    border-radius: 50%;
     margin: 0 auto;
   }
 }
