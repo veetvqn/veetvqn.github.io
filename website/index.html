@@ -4,6 +4,7 @@
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
@@ -12,11 +13,20 @@
     <body>
         <header>
             <img src="logo.png" alt="Your Site Logo" class="logo">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="projects.html">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="projects.html#project1">Terraplot</a></li>
+                            <li><a href="projects.html#project2">Tiger Trades</a></li>
+                            <li><a href="projects.html#project3">CreditSense</a></li>
+                        </ul>
+                    </li>
                     <li><a href="reflection.html">Reflection</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -37,24 +47,21 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="#" class="btn-primary">VIEW MY WORK ›</a>
-                <a href="#" class="btn-outline">GET IN TOUCH</a>
+                <a href="projects.html" class="btn-primary">VIEW MY WORK ›</a>
+                <a href="contact.html" class="btn-outline">GET IN TOUCH</a>
             </div>
-            </div>
-
-            <div class="hero-video">
-            <div class="video-box">
-                <div class="play">▶</div>
-                <p class="video-label">INTRO VIDEO</p>
-                <p class="video-link">youtu.be/Wq99WfUjKl</p>
-            </div>
-            </div>
+        </div>
         </section>
 
         <section class="purpose">
             <div class="chip">● PURPOSE & GOALS</div>
             <p class="purpose-text">
-            I am creating this website to showcase a few of the projects I have worked on during my time at Mizzou. The goal of this website is to showcase the skills that I have acquired while studying in Mizzou's Computer Science courses. I had a lot of fun creating these projects, so I hope you will find them interesting. One of the end goals for me is to have this website serve as a kind of hub where I can store information on all of my projects so I can share it with recruiters as a way of getting their attention and displaying my unique skills. As a bonus, it would be cool to have this place where I can look back on my projects myself and maybe share them with others as well.
+            I am creating this website to showcase a few of the projects I have worked on during my time at Mizzou. 
+            The goal of this website is to showcase the skills that I have acquired while studying in Mizzou's Computer Science courses. 
+            I had a lot of fun creating these projects, so I hope you will find them interesting. One of the end goals for me is to have 
+            this website serve as a kind of hub where I can store information on all of my projects so I can share it with recruiters as 
+            a way of getting their attention and displaying my unique skills. As a bonus, it would be cool to have this place where I can 
+            look back on my projects myself and maybe share them with others as well.
             </p>
         </section>
 

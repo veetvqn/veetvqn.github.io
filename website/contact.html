@@ -3,6 +3,7 @@
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact — Viet Nguyen</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="nav.css">
@@ -11,11 +12,20 @@
 
 	<header>
 		<img src="logo.png" alt="Your Site Logo" class="logo">
+		<input type="checkbox" id="menu-toggle" class="menu-toggle">
+		<label for="menu-toggle" class="hamburger">&#9776;</label>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="projects.html">Projects</a></li>
+				<li class="dropdown">
+					<a href="projects.html">Projects</a>
+					<ul class="dropdown-menu">
+						<li><a href="projects.html#project1">Terraplot</a></li>
+						<li><a href="projects.html#project2">Tiger Trades</a></li>
+						<li><a href="projects.html#project3">CreditSense</a></li>
+					</ul>
+				</li>
 				<li><a href="reflection.html">Reflection</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>

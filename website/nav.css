@@ -60,6 +60,33 @@ nav ul li a.active {
   background-color: rgba(66, 135, 245, 0.1);
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: #1a192f;
+  border: 1px solid rgba(66, 135, 245, 0.15);
+  border-radius: 6px;
+  padding: 6px 0;
+  min-width: 160px;
+  z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li a {
+  padding: 8px 16px;
+  white-space: nowrap;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -108,5 +135,13 @@ nav ul li a.active {
   nav ul li a {
     display: block;
     width: 100%;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none;
   }
 }
