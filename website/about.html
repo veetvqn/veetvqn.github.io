@@ -13,20 +13,11 @@
 <body>
     <header>
         <img src="logo.png" alt="Your Site Logo" class="logo">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
-                <li class="dropdown">
-                    <a href="projects.html">Projects</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="projects.html#project1">Terraplot</a></li>
-                        <li><a href="projects.html#project2">Tiger Trades</a></li>
-                        <li><a href="projects.html#project3">CreditSense</a></li>
-                    </ul>
-                </li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="reflection.html">Reflection</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -36,10 +27,13 @@
     <main>
         <h1>About Me</h1>
 
+        <!-- Primary grid: left column = bio/skills/resume, right column = photo + video -->
         <div class="about-grid">
 
+            <!-- Left column -->
             <div class="about-col-left">
 
+                <!-- Introduction -->
                 <section class="intro-section">
                     <div class="intro-text">
                         <h3>Who I Am</h3>
@@ -53,6 +47,7 @@
                     </div>
                 </section>
 
+                <!-- Education Overview -->
                 <section>
                     <h3>Education Overview</h3>
                     <p>Again, I am a Computer Science major here at the University of Missouri. The specific field I am most focused in would be
@@ -64,14 +59,45 @@
 
                 <section>
                     <h3>Skills</h3>
-                    <ul class="about-list">
-                        <li>Full-Stack Web Development</li>
-                        <li>Machine Learning Projects</li>
-                        <li>Database Design</li>
-                        <li>Software Engineering</li>
-                    </ul>
+                    <figure class="table-figure">
+                        <figcaption>A summary of my skills, categories, and my confidence in them</figcaption>
+                        <div class="table-wrap">
+                            <table class="skills-table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Skill</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Skill Levelyy</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Full-Stack Web Development</td>
+                                        <td>Web</td>
+                                        <td>Advanced</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Machine Learning Projects</td>
+                                        <td>AI/ML</td>
+                                        <td>Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Database Design</td>
+                                        <td>Data</td>
+                                        <td>Intermediate</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Software Engineering</td>
+                                        <td>General</td>
+                                        <td>Advanced</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </figure>
                 </section>
 
+                <!-- Resume section -->
                 <section>
                     <h3>My Resume</h3>
                     <p><a href="Resume.pdf" class="resume-link" target="_blank">Download My Resume</a></p>
@@ -79,7 +105,10 @@
 
             </div>
 
+            <!-- Right column -->
             <div class="about-col-right">
+
+                <!-- Video -->
                 <section>
                     <h3>Intro Video</h3>
                     <figure class="video-figure">
@@ -90,6 +119,7 @@
                     </figure>
                 </section>
 
+                <!-- Photo -->
                 <img
                     src="media/gang.jpg"
                     alt="Viet Nguyen, Computer Science student at the University of Missouri"
