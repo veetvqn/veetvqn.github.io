@@ -1044,6 +1044,37 @@ select.fi2 option {
     }
 }
 
+/* Footer icon hover animation */
+.footer-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(66, 135, 245, 0.2);
+  vertical-align: middle;
+  margin-right: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+.footer-icon-wrap:hover {
+  transform: scale(1.25);
+  background: rgba(66, 135, 245, 0.15);
+  border-color: rgba(66, 135, 245, 0.6);
+  box-shadow: 0 0 10px rgba(66, 135, 245, 0.4);
+}
+
+.footer-icon {
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.footer-icon-wrap:hover .footer-icon {
+  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(195deg);
+}
+
 /* print query */
 @media print {
 
