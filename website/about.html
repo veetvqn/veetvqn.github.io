@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- 
+   Name: [Viet Nguyen]
+   Date: [5/3/2026]
+   Course: [IS_LT-4355]
+   Description: [About page that will display information about me and my background]
+-->
+
 <head>
     <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
     <meta charset="utf-8">
@@ -13,11 +21,20 @@
 <body>
     <header>
         <img src="logo.png" alt="Your Site Logo" class="logo">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html" class="active">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects.html#project1">Terraplot</a></li>
+                        <li><a href="projects.html#project2">Tiger Trades</a></li>
+                        <li><a href="projects.html#project3">CreditSense</a></li>
+                    </ul>
+                </li>
                 <li><a href="reflection.html">Reflection</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -27,7 +44,6 @@
     <main>
         <h1>About Me</h1>
 
-        <!-- Primary grid: left column = bio/skills/resume, right column = photo + video -->
         <div class="about-grid">
 
             <!-- Left column -->
